@@ -1,0 +1,4 @@
+La inclusion del archivo array_helpers.h en los archivos fuente (.c) 
+mediante la directiva #include es suficiente para que el compilador 
+encuentre y tenga acceso a las declaraciones de funciones 
+y estructuras en ese archivo .h

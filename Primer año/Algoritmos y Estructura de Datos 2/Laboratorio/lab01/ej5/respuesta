@@ -1,0 +1,12 @@
+-¿Por qué falla la compilación?
+
+La compilacion falla dado que el archivo "mybool.h" se redefine,
+primero se "incluye" en el archivo main.c, luego este "incluye" a 
+array_helpers.h el cual nuevamente define "mybool.h"
+
+-¿Cómo se resuelve el problema?
+
+El problema se resuelve con la directiva #ifndef y #endif en mybool.h. 
+Lo que hace esta directiva es evitar que se redefina el archivo, es decir,
+"Si no esta definido, definilo" en caso de que se haya definido anteriormente
+el if evita que se ejecute nuevamente.
